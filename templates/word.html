@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% block content %}
+<h3>Meaning: {{meaning}}</h3>
+
+<h3>Synonyms: {% for synonym in synonyms %}
+    {{synonym}},
+    {% endfor %}</h3>
+
+
+<h3>Antonyms: {% for antonym in antonyms %}
+    {{antonym}},
+    {% endfor %}</h3>
+{% endblock content %}
